@@ -1,17 +1,15 @@
-FROM node:lts-buster 
-RUN apt-get update && \
-    apt-get install -y \
-    ffmpeg \
+FROM node:20-bullseye-slim
+
+RUN apt-get update && apt-get install -y \
     imagemagick \
-    webp && \
-    apt-get upgrade -y && \
-    rm -rf /var/lib/apt/lists/*
-  
+    webp \
+    ffmpeg \
+    && rm -rf /var/lib/apt/lists/*
+
 WORKDIR /usr/src/app
 
-COPY package.json .
-
-RUN npm install && npm install -g qrcode-terminal pm2
+COPY package*.json ./
+RUN npm install && npm install -g qrcode-terminal
 
 COPY . .
 
