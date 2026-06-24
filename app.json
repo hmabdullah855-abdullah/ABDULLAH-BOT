@@ -1,0 +1,21 @@
+{
+  "name": "ABDULLAH-MD",
+  "description": "ABDULLAH-MD WhatsApp bot made by AbdullahMD official",
+  "logo": "https://mhcloud.kesug.com/images/abdullahpic.jpg",
+  "keywords": ["bot","ABDULLAH-MD","ABDULLAH-MD"],
+  "success_url": "/",
+
+  "env": {
+    "SESSION_ID": {
+        "description": "Put the ABDULLAH-MD session-id here.",
+        "required": true
+    }
+},
+
+"buildpacks": [
+    {
+        "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+],
+"stack": "heroku-24"
+}
