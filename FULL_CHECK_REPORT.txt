@@ -1,0 +1,11 @@
+JS files checked: 61
+JS syntax errors: 0
+package.json present: True
+package.json parse error: none
+npm start script: node index.js
+index.js present: True
+index.html present: True
+Local relative require targets missing: 0
+Telegram token/library references remaining: 0
+
+This is a static/code-level check; it does not contact WhatsApp/Telegram/Railway.

@@ -1,0 +1,8 @@
+JS files checked: 61
+Syntax errors: 0
+Missing local require targets: 0
+Pairing server slots: 50
+Browser bot name field: removed; fixed name ABDULLAH-MD
+Pairing version: fetchLatestWaWebVersion() with Baileys fallback
+Pairing code: real requestPairingCode(), not fake/static
+Live WhatsApp/Railway test: not available in this environment
